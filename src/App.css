@@ -1,0 +1,74 @@
+header {
+  height: 125px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: white;
+  font-weight: bold;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+/* Logo styles */
+.logo {
+  max-width: 15%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Score counter styles */
+.score {
+  margin: 0;
+  font-size: 30px;
+}
+
+/* Main section styles */
+.main-section {
+  position: relative;
+  background-image: url('https://cdn.myportfolio.com/4e80716921aea9ee65fd41a4f690a253/5edbd4fc017ac86c0db6bafe8367d81533a519dec0f1b649d07d37ef547f4eba097044bfbed18c8f.png?h=bff980ef4410fe36a8451d79685e5f85');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/* Dark overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Image container styles */
+.image-container {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 50%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+/* Image styles */
+.image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 10px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.image:hover {
+  transform: scale(1.1);
+}
